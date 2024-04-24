@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hizana Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+        </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/js/all.min.js" integrity="sha512-u3fPA7V8qQmhBPNT5quvaXVa1mnnLSXUep5PS1qo5NRzHwG19aHmNJnj1Q8hpA/nBWZtZD4r4AX6YOt5ynLN2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<body>
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                
+                </ul>
+              
+            </nav>
+            <div class="header-text">
+                <p class="text ">WEB DEVELOPER</p>
+                <h1>Hi, I'm <span>Hizana Shafeeq</span> </h1>
+            </div>
+       
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic.jpg" alt="error">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello there I'm Hizana Shafeeq, a frontend developer passionate about crafting exceptional digital experiences. With a focus on performance and usability, I strive to create websites and applications that not only look great but also deliver results. I have a strong foundation in frontend technologies and a knack for problem-solving. I'm excited about the future of web development and eager to be a part of it. Let's build something awesome together!
+
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                       
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                        
+                            <li><span>Web Devlopment</span><br>frontend Development</li>
+                            
+                        </ul>
+
+                    </div>
+                    
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019</span><br>SSLC from Kerala</li>
+                            <li><span>2021</span><br>HSS from Kerala</li>
+                            <li><span>present</span><br>Bachelor's of Technology from Kerala</li>
+                        </ul>
+
+                    </div>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <!--<i class="fa-solid fa-code"></i>-->
+                    <h2>Web Design</h2>
+               
+                    <p>As a web designer, I'm dedicated to crafting immersive online experiences that leave a lasting impact. With a passion for creativity and a knack for problem-solving, I meticulously design layouts, select fonts, and curate imagery to convey brands' unique stories.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design" target="_blank">Learn More</a>
+                </div>
+                <div>
+                <!---<i class="fa-solid fa-crop"></i> ------->    
+                    <h2>Web Devlopment</h2>
+                  
+                    <p>As a web developer, I transform ideas into responsive and efficient websites. With expertise in coding languages like HTML, CSS, and JavaScript, I create user-friendly interfaces and seamless experiences. .</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_development" target="_blank">Learn More</a>
+                </div>
+               
+
+            </div>
+        </div>
+    </div>
+
+    <!--Portfolio-->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                   <img src="dairy.jpg" alt="">
+                   <div class="layer">
+                    <h3>Dairy Product Shopping website</h3>
+                    <p>Designed and implemented a Dairy Product Shopping website project, facilitating 100% pure dairy products , and on time delivery. </p>
+            
+                   </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+   
+  <div id="contact">
+<div class="container">
+    <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+           
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/hizana-shafeeq-59882226b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/_hizana._/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                
+                <a href="mailto:hizanashafeeqtk@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+                <h3>mob:7025503269</h3>
+                
+            </div>
+            <a href="HIZANA-RESUME.pdf" download class="btn btn2" >Download CV</a>
+        </div>
+        <div class="contact-right">
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your message"></textarea>
+                <button type="submit " class="btn btn2">Submit</button>
+
+            </form>
+            <span id="msg"></span>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Created by Hizana Shafeeq © 2024</p>
+</div>
+  </div>
+
+    <script>
+        var tablinks =document.getElementsByClassName("tab-links");
+        var tabcontents =document.getElementsByClassName("tab-contents");
+
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+<script>
+     const scriptURL = 'https://script.google.com/macros/s/AKfycbwpO6Gs5jKaBrguEthhMUFUpmJDGUbxqVDAY-BLnqvQnHu_Dg5ikde6etqoXcRSPoo/exec'
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', e => {
+        e.preventDefault();
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then(response => {
+                if (response.ok) {
+                    msg.innerHTML = "Message sent. Thank you!";
+                    form.reset();
+                } else {
+                    msg.innerHTML = "Error sending message. Please try again.";
+                }
+                setTimeout(function() {
+                    msg.innerHTML = "";
+                }, 5000);
+            })
+            .catch(error => {
+                msg.innerHTML = "Error sending message. Please try again.";
+                console.error('Error!', error);
+            });
+    });
+</script>
+
+    
+</body>
+</html>
